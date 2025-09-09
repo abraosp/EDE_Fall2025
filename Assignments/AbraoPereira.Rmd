@@ -22,15 +22,15 @@ Enter answers to the questions just below the >Answer: prompt.
 
 1. What are your previous experiences with data analytics, R, and Git? Include both formal and informal training.
 
-> Answer: I don't have any previous experiences in data analytics with R or Git. But I do have some experiences with data analytics in ArcGIS pro. Some of the analysis I did include network analysis, deforestation, mangroves, and rain water collection, NDVI, elevation modeling and etc. 
+> Answer: I don't have any previous experiences in data analytics with R or Git. But I do have some experiences with data analytics in ArcGIS pro. Some of the analysis I did include vector and raster analysis; network analysis, deforestation, mangroves, and rain water collection, NDVI, elevation modeling and etc. 
 
 2. Are there any components of the course about which you feel confident?
 
-> Answer: All of the topics in this course are great but I am most excited about to learn about data visualization and spatail analysis in R. I am very much looking forward to learn data exploration. It its one of the important skills to have and be fluent in it. 
+> Answer: All of the topics in this course are great but I am most excited to learn about data visualization and spatial analysis in R. I am very much looking forward to learn data exploration. It its one of the important skills to have and be fluent in it. 
 
 3. Are there any components of the course about which you feel apprehensive?
 
-> Answer: I am feeling apprehesive about the coding part, I assume this class wil have a lot of coding components. I have taking a python class but it was in my freshmen year of my undergraduate and I don't practice or write any codes after that class. But I do know some basic coding in python. I think coding in r is different from Python programming so I am a bit nervous about the coding parts.  
+> Answer: I am feeling apprehesive about the coding part, I assume this class wil have a lot of coding components. I have taking a python class but it was in my freshmen year of my undergraduate and I don't practice or write any codes after completed Python class. But I do know some basic coding in python. I think coding in R is different from Python programming so I am a bit nervous about the coding parts and excited at the same time.  
 
 
 ## 2) GitHub
