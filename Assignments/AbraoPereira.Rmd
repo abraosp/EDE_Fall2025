@@ -1,0 +1,43 @@
+---
+title: "Assignment 1: Introduction"
+author: "Abrao Soares Pereira"
+output: pdf_document
+---
+
+## OVERVIEW
+
+This exercise accompanies the introductory material in Environmental Data Analytics. 
+
+## Directions
+1.  Rename this file `<FirstLast>_A01_Introduction.Rmd` (replacing `<FirstLast>` with your first and last name).
+2.  Change "Student Name" on line 3 (above) with your name.
+3.  Work through the steps, **creating code and output** that fulfill each instruction.
+4.  Be sure to **answer the questions** in this assignment document.
+5.  When you have completed the assignment, **Knit** the text and code into a single PDF file.
+6.  After Knitting, submit the completed exercise (PDF file) to the appropriate assignment section on Canvas.
+
+
+## 1) Discussion Questions
+Enter answers to the questions just below the >Answer: prompt.
+
+1. What are your previous experiences with data analytics, R, and Git? Include both formal and informal training.
+
+> Answer: I don't have any previous experiences in data analytics with R or Git. But I do have some experiences with data analytics in ArcGIS pro. Some of the analysis I did include network analysis, deforestation, mangroves, and rain water collection, NDVI, elevation modeling and etc. 
+
+2. Are there any components of the course about which you feel confident?
+
+> Answer: All of the topics in this course are great but I am most excited about to learn about data visualization and spatail analysis in R. I am very much looking forward to learn data exploration. It its one of the important skills to have and be fluent in it. 
+
+3. Are there any components of the course about which you feel apprehensive?
+
+> Answer: I am feeling apprehesive about the coding part. I have taking a python class but it was in my freshmen year of my undergraduate and I don't practice or write any codes after that class. But I do know some basic coding in python. 
+
+
+## 2) GitHub
+
+Provide a link below to your forked course repository in GitHub. Make sure you have pulled all recent changes from the course repository and that you have updated your course README file, committed those changes, and pushed them to your GitHub account. 
+
+> Answer: 
+
+## 3) Knitting
+When you have completed this document, click the `knit` button.This should produce a PDF copy of your markdown document. Submit this PDF to Canvas 
