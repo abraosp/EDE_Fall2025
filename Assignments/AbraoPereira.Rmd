@@ -30,7 +30,7 @@ Enter answers to the questions just below the >Answer: prompt.
 
 3. Are there any components of the course about which you feel apprehensive?
 
-> Answer: I am feeling apprehesive about the coding part. I have taking a python class but it was in my freshmen year of my undergraduate and I don't practice or write any codes after that class. But I do know some basic coding in python. 
+> Answer: I am feeling apprehesive about the coding part, I assume this class wil have a lot of coding components. I have taking a python class but it was in my freshmen year of my undergraduate and I don't practice or write any codes after that class. But I do know some basic coding in python. I think coding in r is different from Python programming so I am a bit nervous about the coding parts.  
 
 
 ## 2) GitHub
