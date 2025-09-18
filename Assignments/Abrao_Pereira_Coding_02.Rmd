@@ -1,0 +1,126 @@
+---
+title: "Assignment 2: Coding Basics"
+author: "Abrão Soares Pereira"
+output: pdf_document
+geometry: margin=2.54cm
+editor_options: 
+  chunk_output_type: console
+---
+
+## OVERVIEW
+
+This exercise accompanies the lessons/labs in Environmental Data Analytics on coding basics.
+
+## Directions
+
+1.  Rename this file `<FirstLast>_A02_CodingBasics.Rmd` (replacing `<FirstLast>` with your first and last name).
+2.  Change "Student Name" on line 3 (above) with your name.
+3.  Work through the steps, **creating code and output** that fulfill each instruction.
+4.  Be sure to **answer the questions** in this assignment document.
+5.  When you have completed the assignment, **Knit** the text and code into a single PDF file.
+6.  After Knitting, submit the completed exercise (PDF file) to Canvas.
+
+## Basics, Part 1
+
+1.  Generate a sequence of numbers from one to 55, increasing by fives. Assign this sequence a name.
+
+2.  Compute the mean and median of this sequence.
+
+3.  Ask R to determine whether the mean is greater than the median.
+
+4.  Insert comments in your code to describe what you are doing.
+
+```{r basics 1}
+#1. 
+my_sequence <- seq(from = 1, to = 55, by = 5)
+
+#2. 
+mean_value <- mean(my_sequence)
+median_value <- median(my_sequence)
+
+#3. 
+mean_greater <- mean_value > median_value
+print(mean_greater)
+
+# First I need to give name to my function, which is my_sequence. Then assign value to it. After that run the sequence by asking R to give me a sequence 5 of from number 1 to 55. After that find the mean and median value from my assign sequence. Ask R to find which one is greater mean or median
+```
+
+
+## Basics, Part 2
+
+5.  Create three vectors, each with four components, consisting of (a) student names, (b) test scores, and (c) whether they are on scholarship or not (TRUE or FALSE).
+
+6.  Label each vector with a comment on what type of vector it is.
+
+7.  Combine each of the vectors into a data frame. Assign the data frame an informative name.
+
+8.  Label the columns of your data frame with informative titles.
+
+```{r basics 2}
+# Vector of student names (character vector)
+student_names <- c("Joao", "Adriana", "Luisa", "Luan")
+
+# Vector of test scores (numeric vector) 90 above is pass to get a scholarship but below 90 is not
+test_scores <- c(96, 89, 94, 86)
+
+# Vector indicating whether on scholarship (logical vector)
+on_scholarship <- c(TRUE, FALSE, TRUE, FALSE)
+
+# 7. Combine all the information into a data frame
+student_data <- data.frame(student_names, test_scores, on_scholarship)
+
+# 8. Column with labels
+colnames(student_data) <- c("Names", "Score", "Scholarship")
+print(student_data)
+
+```
+
+9.  QUESTION: How is this data frame different from a matrix?
+
+> Answer: Because it can store different data type. Unlike Matrix, where all os the elements must be the same
+
+10. Create a function with one input. In this function, use `if`...`else` to evaluate the value of the input: if it is greater than 50, print the word "Pass"; otherwise print the word "Fail". 
+
+11. Create a second function that does the exact same thing as the previous one but uses `ifelse()` instead if `if`...`else `. 
+
+12. Run both functions using the value 52.5 as the input
+
+13. Run both functions using the **vector** of student test scores you created as the input. (Only one will work properly...)
+
+```{r basics 3}
+
+#10. Create a function using if...else
+check_pass_fail_if_else <- function(score) {
+  if (score > 50) {
+    print("Pass")
+  } else {
+    print("Fail")
+  }
+}
+
+#11. Create a function using ifelse()
+check_pass_fail_ifelse <- function(score) {
+  print(ifelse(score > 50, "Pass", "Fail"))
+}
+
+#12a. Run the first function with the value 52.5
+check_pass_fail_if_else(52.5)
+
+#12b. Run the second function with the value 52.5
+check_pass_fail_ifelse(52.5)
+
+#13a. Run the first function with the vector of test scores (this will not work correctly)
+# check_pass_fail_if_else(test_scores)
+
+#13b. Run the second function with the vector of test scores
+check_pass_fail_ifelse(test_scores)
+
+
+```
+
+14. QUESTION: Which option of `if`...`else` vs. `ifelse` worked? Why? (Hint: search the web for "R vectorization")
+
+> Answer: The ifelse() function worked correctly with the vector of test scores. if...else is only evaluates the very first element of a vector. While, ifelse()  it efficiently performs the conditional check on every element of the input vector. 
+
+
+**NOTE** Before knitting, you'll need to comment out the call to the function in Q13 that does not work. (A document can't knit if the code it contains causes an error!)
