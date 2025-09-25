@@ -42,7 +42,10 @@ median_value <- median(my_sequence)
 mean_greater <- mean_value > median_value
 print(mean_greater)
 
-# First I need to give name to my function, which is my_sequence. Then assign value to it. After that run the sequence by asking R to give me a sequence 5 of from number 1 to 55. After that find the mean and median value from my assign sequence. Ask R to find which one is greater mean or median
+# First I need to give name to my function, which is my_sequence. 
+#Then assign value to it. After that run the sequence by asking R to give me a 
+#sequence 5 of from number 1 to 55. After that find the mean and median value 
+#from my assign sequence. Ask R to find which one is greater mean or median
 ```
 
 
@@ -77,7 +80,7 @@ print(student_data)
 
 9.  QUESTION: How is this data frame different from a matrix?
 
-> Answer: Because it can store different data type. Unlike Matrix, where all os the elements must be the same
+> Answer: Because it can store different data type. Unlike Matrix, where all of the elements must be the same
 
 10. Create a function with one input. In this function, use `if`...`else` to evaluate the value of the input: if it is greater than 50, print the word "Pass"; otherwise print the word "Fail". 
 
@@ -109,7 +112,7 @@ check_pass_fail_if_else(52.5)
 #12b. Run the second function with the value 52.5
 check_pass_fail_ifelse(52.5)
 
-#13a. Run the first function with the vector of test scores (this will not work correctly)
+#13a. Run the first function with the vector of test scores
 # check_pass_fail_if_else(test_scores)
 
 #13b. Run the second function with the vector of test scores
