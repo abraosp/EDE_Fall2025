@@ -60,7 +60,7 @@ You need to load packages each time you start (or restart) an R coding session; 
 ```{r Setup: Loading Packages}
 #Install packages - uncomment these only when you need to install packages
 #install.packages('dplyr')
-#install.packages('ggplot')
+#install.packages('ggplot2')
 #install.packages('here')
 
 #Load the tidyverse, ggplot2, and here package
@@ -125,7 +125,7 @@ Commons functions to import datasets and store as data frames are *read.table()*
 #  file="/home/guest/EDE_Fall2024/Data/Raw/USGS_Site02085000_Flow_Raw.csv",
 #  stringsAsFactors = TRUE)
 
-# Relative file path (friendly for users regardless of machine)
+# Relative file path (friendly for users regardless of machine) # this is the proper way to read csv file
 USGS.flow.data <- read.csv(
   file = here("./Data/Raw/USGS_Site02085000_Flow_Raw.csv"),
   stringsAsFactors = TRUE)   
@@ -144,8 +144,12 @@ Prior to running this, reset your workspace (Session->Restart R) to ensure it ru
 
 ```{r Setup}
 # Load packages
+library(dplyr)
+library(ggplot2)
+library(here)
 
 # Confirm working directory
+here()
 
 # Load the USGS flow data into a data frame
 
@@ -198,7 +202,7 @@ summary(USGS.flow.data)  #could point to column only with $
 ```
 
 What happened to blank cells in the spreadsheet when they were imported into R?
-> Answer: 
+> Answer: They are label as N/A becuase there is no information. N/A means null value, however zero is a value.  
 
 ### Identify and address issues: Missing Data
 
