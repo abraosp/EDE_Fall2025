@@ -103,7 +103,7 @@ An exploratory option to visualize the model fit is to use the function `plot`. 
 4. **Residuals vs. Leverage.** This graph will display potential outliers. The values that fall outside the dashed red lines (Cook's distance) are outliers for the model. Watch for drastic departures of the solid red line from horizontal - this is a sign of a poor model fit.
 
 ```{r, fig.height = 3, fig.width = 4}
-par(mfrow = c(2,2), mar=c(4,4,4,4))
+par(mfrow = c(2,2), mar=c(2,2,2,2))
 plot(irradiance.regression)
 par(mfrow = c(1,1))
 ```
@@ -144,7 +144,7 @@ irradiancebydepth2 <-
     ggplot(PeterPaul.chem.nutrients, aes(x = depth, y = irradianceWater)) +
     geom_point() +
     scale_y_log10() +  #log transformed values for irradianceWater
-    geom_smooth(method = 'lm', se = FALSE, color = "black")
+    geom_smooth(method = 'lm', se = FALSE, color = "orange")
 print(irradiancebydepth2)
 
 # Make the graph attractive
